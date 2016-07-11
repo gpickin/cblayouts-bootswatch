@@ -30,7 +30,7 @@
 	#cb.widget("Archives")#
 
 	<li class="nav-header" style="padding-top:10px;">Entries Search</li>
-	#cb.widget("SearchForm")#
+	#cb.widget(name="SearchForm", args={ querycss="blogSideBarSearchField" } )#
 
 	<!---#cb.widget("Meta",{titleLevel="4"})#--->
 
@@ -39,3 +39,8 @@
 <!--- ContentBoxEvent --->
 #cb.event("cbui_afterSideBar")#
 </cfoutput>
+<style>
+	.blogSideBarSearchField {
+		width:100%;
+	}
+</style>
